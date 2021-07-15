@@ -8,8 +8,8 @@ public class Messages {
         System.out.println("Hotel");
     }
 
-    public int incrementPrinter(int n) {
-        return n+1;
+    public void incrementPrinter(int n) {
+        System.out.println(n+1);
     }
     
 }
