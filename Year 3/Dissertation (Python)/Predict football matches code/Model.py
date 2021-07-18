@@ -67,7 +67,7 @@ class Model:
         c_range = [1,10,100,1000]
         gamma_range = [2**-5,2**-3,2**-1,2**1]
         param_grid = dict(C = c_range,gamma = gamma_range)
-        clf = GridSearchCV(svm,param_grid,cv=5,scoring="accuracy",error_score='raise',iid='false')
+        clf = GridSearchCV(svm,param_grid,cv=5,scoring="accuracy",error_score='raise')
         try:
             clf.fit(featureMatrix,Ytrain)
             print("predict")
